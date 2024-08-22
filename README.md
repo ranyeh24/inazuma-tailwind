@@ -66,8 +66,10 @@ module.exports = {
         // Colors customization here
         // If you want to change key name, make sure you change the class name that used in the HTML file
       },
+      ...
     },
   },
+  ...
 };
 ```
 3. Change the color keys or values you want. To learn more, see the [color customization documentation](https://tailwindcss.com/docs/colors).
@@ -87,8 +89,10 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "sans-serif"],  //Sans-serif font
       },
+      ...
     },
   },
+  ...
 };
 ```
 3. Replace `Inter` font name with another font name you want. To learn more, see the [font family customization documentation](https://tailwindcss.com/docs/font-family).
@@ -96,15 +100,14 @@ module.exports = {
 5. Update the Google Fonts link and change `font-family` property with the font name you want.
 ```css
 @import url(/* Your Google Fonts link here */);
-
 ...
-
 @layer base {
   ...
   html {
     ...
     font-family: /* Your font name here */;
   }
+  ...
 }
 ```
 6. Save the changes and run it in your web browser.
