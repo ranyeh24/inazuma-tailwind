@@ -37,7 +37,7 @@ You can see the live demo here.
 ## Installation
 
 1. Clone the repository:
-```javascript
+```
 git clone https://github.com/yourusername/inazuma-tailwind.git
 ```
 2. Or you can download the zip then extract it to your project folder.
