@@ -1,3 +1,5 @@
+"use strict";
+
 // Page loading
 var pageLoading = document.querySelector(".page-loading");
 
@@ -226,15 +228,10 @@ portfolioFilters.forEach((filter) => {
 // Scroll to top
 var st = document.querySelector("[data-web-trigger=scroll-top]");
 
-if (st) {
-  window.addEventListener("scroll", function () {
-    st.classList.toggle("is-showed", window.scrollY > 50);
-  });
-
-  st.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
-}
+window.onscroll = function () {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    st.classList.add("is-showed");
+  } else {
+    st.classList.remove("is-showed");
+  }
+};
