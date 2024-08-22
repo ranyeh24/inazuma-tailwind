@@ -497,6 +497,7 @@ video {
 html{
   scroll-behavior: smooth;
   color-scheme: light;
+  font-family: "Inter", sans-serif;
 }
 
 [data-web-theme="dark"] {
