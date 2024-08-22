@@ -1,0 +1,18 @@
+{
+  "name": "inazuma-tailwind",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "tw-install": "npm install -D tailwindcss",
+    "tw-init": "npx tailwindcss init",
+    "tw-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/main.css --watch",
+    "tw-minify": "npx tailwindcss -o ./assets/css/main.min.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
