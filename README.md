@@ -32,7 +32,7 @@ Inazuma Tailwind CSS is an open-source and free Tailwind CSS template created by
 
 ## Live Demo
 
-You can see the live demo here.
+You can see the live demo [here](https://ranyeh24.github.io/inazuma-tailwind).
 
 ## Installation
 
