@@ -102,8 +102,8 @@ module.exports = {
 @layer base {
   ...
   html {
-  ...
-  font-family: /* Your font name here */;
+    ...
+    font-family: /* Your font name here */;
   }
 }
 ```
