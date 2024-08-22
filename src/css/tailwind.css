@@ -28,6 +28,7 @@
   html {
     @apply scroll-smooth;
     color-scheme: light;
+    font-family: "Inter", sans-serif;
   }
 
   [data-web-theme="dark"] {
