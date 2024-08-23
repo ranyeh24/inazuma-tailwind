@@ -287,11 +287,8 @@
     @apply !static m-0 h-12 w-12 rounded-lg text-[22px] bg-body-light-1 dark:bg-body-dark-12/10 text-body-light-12 dark:text-body-dark-12 shadow-lg hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color after:hidden;
   }
 
-  [data-web-trigger="scroll-top"] {
+  [data-web-trigger="scroll-top"].is-hided {
     @apply opacity-0 invisible;
-  }
-  [data-web-trigger="scroll-top"].is-showed {
-    @apply !opacity-100 !visible;
   }
 }
 @layer utilities {
