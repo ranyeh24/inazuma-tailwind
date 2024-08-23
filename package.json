@@ -1,5 +1,5 @@
 {
-  "name": "inazuma-tailwind",
+  "name": "Inazuma | Tailwind CSS Company Landing Page",
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
@@ -8,10 +8,10 @@
     "tw-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/main.css --watch",
     "tw-minify": "npx tailwindcss -o ./assets/css/main.min.css --minify"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["company"],
+  "author": "Ranyeh",
+  "license": "MIT License",
+  "description": "Tailwind CSS Company Landing Page Template by Ranyeh.",
   "devDependencies": {
     "tailwindcss": "^3.4.10"
   }
