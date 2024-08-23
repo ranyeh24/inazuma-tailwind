@@ -1163,7 +1163,7 @@ p + p{
   color: rgb(238 238 240 / var(--tw-text-opacity));
 }
 
-[data-web-trigger="scroll-top"]{
+[data-web-trigger="scroll-top"].is-hided{
   visibility: hidden;
   opacity: 0;
 }
