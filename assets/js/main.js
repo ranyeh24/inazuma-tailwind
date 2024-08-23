@@ -228,10 +228,22 @@ portfolioFilters.forEach((filter) => {
 // Scroll to top
 var st = document.querySelector("[data-web-trigger=scroll-top]");
 
-window.onscroll = function () {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    st.classList.remove("is-hided");
-  } else {
-    st.classList.add("is-hided");
-  }
-};
+if (st) {
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      st.classList.remove("is-hided");
+    } else {
+      st.classList.add("is-hided");
+    }
+  };
+
+  st.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
