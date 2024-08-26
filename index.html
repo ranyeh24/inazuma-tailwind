@@ -730,8 +730,8 @@
             </button>
           </nav>
 
-          <div class="portfolio-grid row">
-            <div class="scroll-revealed portfolio col-12 sm:col-6 lg:col-4">
+          <div class="scroll-revealed portfolio-grid row">
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
               <article class="group" data-filter="branding">
                 <div
                   class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
@@ -780,7 +780,7 @@
               </article>
             </div>
 
-            <div class="scroll-revealed portfolio col-12 sm:col-6 lg:col-4">
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
               <article class="group" data-filter="research">
                 <div
                   class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
@@ -829,7 +829,7 @@
               </article>
             </div>
 
-            <div class="scroll-revealed portfolio col-12 sm:col-6 lg:col-4">
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
               <article class="group" data-filter="marketing">
                 <div
                   class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
@@ -878,7 +878,7 @@
               </article>
             </div>
 
-            <div class="scroll-revealed portfolio col-12 sm:col-6 lg:col-4">
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
               <article class="group" data-filter="planning">
                 <div
                   class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
@@ -927,7 +927,7 @@
               </article>
             </div>
 
-            <div class="scroll-revealed portfolio col-12 sm:col-6 lg:col-4">
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
               <article class="group" data-filter="branding">
                 <div
                   class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
@@ -976,7 +976,7 @@
               </article>
             </div>
 
-            <div class="scroll-revealed portfolio col-12 sm:col-6 lg:col-4">
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
               <article class="group" data-filter="marketing">
                 <div
                   class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
@@ -3170,15 +3170,11 @@
         origin: "bottom",
         distance: "16px",
         duration: 1000,
-        reset: true,
+        reset: false,
       });
 
       sr.reveal(`.scroll-revealed`, {
-        interval: 100,
-        // cleanup: true,
-        // viewOffset: {
-        //   top: 74,
-        // },
+        cleanup: true,
       });
 
       // GLightBox
