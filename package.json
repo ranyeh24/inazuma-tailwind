@@ -8,9 +8,13 @@
     "tw-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/main.css --watch",
     "tw-minify": "npx tailwindcss -o ./assets/css/main.min.css --minify"
   },
-  "keywords": ["company"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranyeh24/inazuma-tailwind.git",
+  },
+  "keywords": ["company", "landing page"],
   "author": "Ranyeh",
-  "license": "MIT License",
+  "license": "MIT",
   "description": "Tailwind CSS Company Landing Page Template by Ranyeh.",
   "devDependencies": {
     "tailwindcss": "^3.4.10"
