@@ -120,6 +120,7 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ## Credits
 
+* Template design from [Play | Free Tailwind CSS Template for Startup and SaaS By TailGrids](https://play-tailwind.tailgrids.com/)
 * Images from [Unsplash](https://unsplash.com/)
 
 ## License
