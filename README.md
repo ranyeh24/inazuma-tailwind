@@ -1,5 +1,7 @@
 # Inazuma - Tailwind CSS Company Landing Page
 
+![Preview image](./assets/img/preview.png)
+
 This is a responsive landing page template for a company built with Tailwind CSS. It comes with a refreshing design, fully customizable and all essetial elements that needed to launch a complete website. This project is created to practice and improve my Tailwind CSS skill.
 
 ## Description
