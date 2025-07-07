@@ -17,20 +17,39 @@ if (pageLoading) {
 const navbar = document.querySelector(".ic-navbar"),
   navbarToggler = navbar.querySelector("[data-web-toggle=navbar-collapse]");
 
-navbarToggler.addEventListener("click", function () {
-  const dataTarget = this.dataset.webTarget,
-    targetElement = document.getElementById(dataTarget),
-    isExpanded = this.ariaExpanded === "true";
-
-  if (!targetElement) {
-    return;
+// Toggle the menu to STATE (true: open, false: close, undefined: toggle).
+function toggleNavbarMenu(state) {
+  switch(state) {
+  case true:
+    navbar.classList.add("menu-show");
+    navbarToggler.ariaExpanded = "true";
+    navbarToggler.innerHTML = '<i class="lni lni-close"></i>'
+    break;
+  case false:
+    navbar.classList.remove("menu-show");
+    navbarToggler.ariaExpanded = "false";
+    navbarToggler.innerHTML = '<i class="lni lni-menu"></i>'
+    break;
+  case undefined:               // toggle
+    if (navbar.classList.contains("menu-show")) {
+      toggleNavbarMenu(false);
+    } else {
+      toggleNavbarMenu(true);
+    }
   }
+}
 
-  navbar.classList.toggle("menu-show");
-  this.ariaExpanded = !isExpanded;
-  navbarToggler.innerHTML = navbar.classList.contains("menu-show")
-    ? '<i class="lni lni-close"></i>'
-    : '<i class="lni lni-menu"></i>';
+// Click event to expand/collapse the navigation menu.
+document.addEventListener("click", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  var elementMouseIsOver = document.elementFromPoint(x, y);
+
+  if(navbarToggler.contains(elementMouseIsOver)) {
+    toggleNavbarMenu();
+  } else {
+    toggleNavbarMenu(false);
+  }
 });
 
 // Sticky navbar
